@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morra Cinese</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Il computer ha scelto: <span id="computerScelta"></span></h1>
+    <div id="pickUser">
+        <input onclick="sceltaUtente('Sasso')" name="rock" type="Image" src="rock.svg" class="singlePick">
+        <input onclick="sceltaUtente('Carta')" name="paper" type="Image" src="paper.svg" class="singlePick">
+        <input onclick="sceltaUtente('Forbici')" name="scissors" type="Image" src="scissors.svg" class="singlePick">
+    </div>
+    <div id="tabella">
+        <div id="game">
+            <h2>Computer : <span id="partite_computer">0</span> game</h2>
+            <h2>User : <span id="partite_user">0</span> game</h2>
+        </div>
+        <div id="set">
+            <h2>Computer : <span id="set_computer">0</span> set</h2>
+            <h2>User : <span id="set_user">0</span> set</h2>
+        </div>
+    </div>
+    
+
+    <h1 id="vincitore"> <span id="winneris"></span></h1>
+
+    <script type="module">
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register("/MorraCinese/sw.js")
+        }
+    </script>
+    
+</body>
+</html>

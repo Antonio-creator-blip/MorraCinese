@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffb703;
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+}
+
+span{
+    font-size: x-large;
+}
+#computerScelta{
+    font-size: xx-large;
+}
+
+h1{
+    font-size: larger;
+}
+h2{
+    font-size: large;
+}
+
+#tabella{
+    margin-top: 5vh;
+}
+#set{
+    margin-top: 5vh;
+}
+#pickUser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.singlePick{
+    margin: 5vw;
+    width: 20vw;
+    outline: none;
+    box-shadow: none;
+    border:2px solid transparent
+}
+
+@media (min-width: 767px){
+    h1{
+        font-size: xx-large;
+    }
+    h2{
+        font-size: x-large;
+    }
+    span{
+        font-size: xx-large;
+    }
+    #computerScelta{
+        font-size: xxx-large;
+    }
+    
+}
+
+@media (min-width: 1119px){
+    h1{
+        font-size: xx-large;
+    }
+    h2{
+        font-size: x-large;
+    }
+    span{
+        font-size: xx-large;
+    }
+    #computerScelta{
+        font-size: xxx-large;
+    }
+    .singlePick{
+        margin: 0;
+        margin: 3vw;
+    }
+    
+}
